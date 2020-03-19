@@ -11,7 +11,13 @@ public class ResultPage extends PageObject {
     @FindBy (css=".page-title")
     private WebElementFacade result;
 
+    @FindBy (id="product-collection-image-410")
+    private WebElementFacade tee;
+
     public String getResult(){
         return result.getText();
+    }
+    public void clickTee(){
+        clickOn(tee);
     }
 }
